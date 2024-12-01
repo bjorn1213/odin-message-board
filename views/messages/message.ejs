@@ -1,11 +1,13 @@
-<div class="card-container">
-    <p class="message-text">
-        <%= message.text %>
-    </p>
-    <p class="message-user">
-        - <%= message.user %>
-    </p>
-    <p class="message-date">
-        <%= message.added %>
-    </p>
-</div>
+<a href=<%- `/${message.id}`%>>
+    <div class="card-container">
+        <p class="message-text">
+            <%= message.text %>
+        </p>
+        <p class="message-user">
+            - <%= message.user %>
+        </p>
+        <p class="message-date">
+            <%= message.added %>
+        </p>
+    </div>
+</a>

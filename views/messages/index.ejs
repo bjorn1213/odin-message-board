@@ -1,10 +1,10 @@
-<%- include('header'); %>
+<%- include('../header'); %>
     <div class="message-container">
         <% messages.forEach((message)=> { %>
-            <%- include('./messages/message', {message: message}); %>
+            <%- include('message', {message: message}); %>
                 <% }); %>
     </div>
     <a href="/new"><button class="new-message">
             <p>...</p>
         </button></a>
-    <%- include('footer'); %>
+    <%- include('../footer'); %>
