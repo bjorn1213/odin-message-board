@@ -14,6 +14,10 @@ h1 {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -67,6 +71,8 @@ main {
 .message-form label {
 	display: grid;
 	grid-template-columns: 120px 1fr;
+	gap: 10px;
+	text-align: right;
 }
 
 .message-form button {
@@ -74,25 +80,41 @@ main {
 	font-size: large;
 }
 
-.message-form button {
+button {
 	background-color: #1647e7;
+	position: relative;
 	color: #fff;
-	border: none;
+	border: 2px solid black;
 	padding: 10px 20px;
 	margin: 10px;
 	font-size: 16px;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: all 0.2s ease;
-	outline: 2px solid black;
+	transition: all 0.2s ease, outline 0s;
 	outline-offset: 0px;
 }
 
-.message-form button:hover {
+button:hover {
 	box-shadow: 0px 0px 0px 2px #289fed, 0px 0px 0px 5px #5fb8ff, 0px 0px 0px 10px
 		#a1d8ff;
 }
 
-.message-form button:active {
+button:active {
 	box-shadow: 0px 0px 0px 2px #5fb8ff, 0px 0px 0px 5px #a1d8ff;
+}
+
+button:focus {
+	outline: 1px solid black;
+}
+
+.new-message {
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	height: 40px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
 }
