@@ -1,0 +1,19 @@
+<%- include('../header'); %>
+
+    <div class="card-container">
+
+        <form method="POST" action="/new" class="message-form">
+            <h1>Post a message!</h1>
+            <label>
+                message
+                <input name="messageText" type="text" required>
+            </label>
+            <label>
+                username
+                <input name="messageUser" type="text" required>
+            </label>
+            <button type="submit">Post!</button>
+        </form>
+    </div>
+
+    <%- include('../footer'); %>

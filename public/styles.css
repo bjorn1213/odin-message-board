@@ -8,22 +8,28 @@ body {
 	background: linear-gradient(to bottom, #effbff, #c3d1ce);
 }
 
-p {
+p,
+h1 {
 	margin: 0;
 	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	gap: 20px;
 }
 
 .message-container {
 	display: flex;
 	max-width: 400px;
 	flex-direction: column;
-	padding-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
 	gap: 20px;
 }
 
-.message {
+.card-container {
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
@@ -35,8 +41,7 @@ p {
 		5px 5px 0px 0px #5fb8ff,
 		10px 10px 0px 0px #a1d8ff,
 		17px 17px 0px 0px #cae6ff,
-		25px 25px 0px 0px #e1eeff,
-		5px 5px 15px 5px rgba(0, 0, 0, 0);
+		25px 25px 0px 0px #e1eeff;
 }
 
 .message-text {
@@ -50,4 +55,44 @@ p {
 .message-date {
 	font-size: xx-small;
 	text-align: right;
+}
+
+.message-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0 50px;
+}
+
+.message-form label {
+	display: grid;
+	grid-template-columns: 120px 1fr;
+}
+
+.message-form button {
+	align-self: center;
+	font-size: large;
+}
+
+.message-form button {
+	background-color: #1647e7;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	outline: 2px solid black;
+	outline-offset: 0px;
+}
+
+.message-form button:hover {
+	box-shadow: 0px 0px 0px 2px #289fed, 0px 0px 0px 5px #5fb8ff, 0px 0px 0px 10px
+		#a1d8ff;
+}
+
+.message-form button:active {
+	box-shadow: 0px 0px 0px 2px #5fb8ff, 0px 0px 0px 5px #a1d8ff;
 }

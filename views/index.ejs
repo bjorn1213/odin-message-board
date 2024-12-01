@@ -1,7 +1,7 @@
 <%- include('header'); %>
     <div class="message-container">
         <% messages.forEach((message)=> { %>
-            <%- include('message', {message: message}); %>
+            <%- include('./messages/message', {message: message}); %>
                 <% }); %>
     </div>
     <%- include('footer'); %>
