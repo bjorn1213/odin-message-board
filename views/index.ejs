@@ -1,17 +1,7 @@
-<html>
-
-<head>
-    <link rel="stylesheet" href="/styles.css">
-    <title>Mini message board</title>
-</head>
-
-<body>
-
+<%- include('header'); %>
     <div class="message-container">
         <% messages.forEach((message)=> { %>
             <%- include('message', {message: message}); %>
                 <% }); %>
     </div>
-</body>
-
-</html>
+    <%- include('footer'); %>
